@@ -3,6 +3,11 @@ FROM ubuntu:latest
 MAINTAINER Vikraman
 
 RUN useradd -c foo -m foo
-RUN su foo sleep 10
 
 USER foo
+
+RUN su foo
+
+RUN su foo sleep 10
+
+RUN su foo bash
