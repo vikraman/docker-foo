@@ -3,6 +3,4 @@ FROM ubuntu:latest
 MAINTAINER Vikraman
 
 RUN useradd -c foo -m foo
-
-RUN su foo ping -c4 google.com
-RUN su foo sleep 10
+RUN su foo /bin/sleep 10
